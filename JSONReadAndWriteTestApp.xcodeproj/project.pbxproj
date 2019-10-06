@@ -12,6 +12,8 @@
 		B9320220234A4C2C00CFE308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B932021E234A4C2C00CFE308 /* Main.storyboard */; };
 		B9320222234A4C2E00CFE308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9320221234A4C2E00CFE308 /* Assets.xcassets */; };
 		B9320225234A4C2E00CFE308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9320223234A4C2E00CFE308 /* LaunchScreen.storyboard */; };
+		B932022F234A51A800CFE308 /* ContactDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B932022E234A51A800CFE308 /* ContactDetailCell.swift */; };
+		B9320231234A51D200CFE308 /* ContactDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9320230234A51D200CFE308 /* ContactDetailCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B9320221234A4C2E00CFE308 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9320224234A4C2E00CFE308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9320226234A4C2E00CFE308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B932022E234A51A800CFE308 /* ContactDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailCell.swift; sourceTree = "<group>"; };
+		B9320230234A51D200CFE308 /* ContactDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		B9320219234A4C2C00CFE308 /* JSONReadAndWriteTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				B932022C234A515000CFE308 /* CustomViews */,
 				B932021A234A4C2C00CFE308 /* AppDelegate.swift */,
 				B932021C234A4C2C00CFE308 /* ViewController.swift */,
 				B932021E234A4C2C00CFE308 /* Main.storyboard */,
@@ -62,6 +67,23 @@
 				B9320226234A4C2E00CFE308 /* Info.plist */,
 			);
 			path = JSONReadAndWriteTestApp;
+			sourceTree = "<group>";
+		};
+		B932022C234A515000CFE308 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				B932022D234A515900CFE308 /* CustomCells */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		B932022D234A515900CFE308 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B932022E234A51A800CFE308 /* ContactDetailCell.swift */,
+				B9320230234A51D200CFE308 /* ContactDetailCell.xib */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9320225234A4C2E00CFE308 /* LaunchScreen.storyboard in Resources */,
+				B9320231234A51D200CFE308 /* ContactDetailCell.xib in Resources */,
 				B9320222234A4C2E00CFE308 /* Assets.xcassets in Resources */,
 				B9320220234A4C2C00CFE308 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +159,7 @@
 			files = (
 				B932021D234A4C2C00CFE308 /* ViewController.swift in Sources */,
 				B932021B234A4C2C00CFE308 /* AppDelegate.swift in Sources */,
+				B932022F234A51A800CFE308 /* ContactDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,13 +306,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JV5G976NU5;
+				DEVELOPMENT_TEAM = 2D3474FP86;
 				INFOPLIST_FILE = JSONReadAndWriteTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PGMewan.JSONReadAndWriteTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PGMewanC.JSONReadAndWriteTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,13 +324,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JV5G976NU5;
+				DEVELOPMENT_TEAM = 2D3474FP86;
 				INFOPLIST_FILE = JSONReadAndWriteTestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PGMewan.JSONReadAndWriteTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PGMewanC.JSONReadAndWriteTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
