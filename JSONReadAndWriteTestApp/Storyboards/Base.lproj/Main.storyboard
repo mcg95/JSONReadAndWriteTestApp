@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Wn9-8n-pZD">
             <objects>
-                <viewController id="ZkN-4O-Usz" sceneMemberID="viewController">
+                <viewController id="ZkN-4O-Usz" customClass="DetailViewController" customModule="JSONReadAndWriteTestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yr9-Ae-bNN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,9 +99,9 @@
                                     <constraint firstAttribute="height" constant="150" id="LS1-Hf-cM9"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YFh-yK-KVg">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="YFh-yK-KVg">
                                 <rect key="frame" x="0.0" y="298" width="375" height="369"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="ZkN-4O-Usz" id="Jq9-X7-Z7s"/>
                                     <outlet property="delegate" destination="ZkN-4O-Usz" id="utE-Z2-Fhz"/>
@@ -120,6 +120,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eT1-bq-4qx"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="vkX-Os-WQt" id="IcD-Se-IWs"/>
+                        <outlet property="tableView" destination="YFh-yK-KVg" id="xyb-H4-ely"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sF-kc-hpA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
